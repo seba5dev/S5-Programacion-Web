@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 2</title>
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="resources/js/alertifyjs/css/alertify.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="resources/js/alertifyjs/css/themes/default.min.css"
+		/>
+		<link rel="icon" type="image/png" href="assets/img/html.png" />
+		<link rel="stylesheet" href="assets/css/ej2.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand grow" href="/">Programación Web</a>
+				<button class="navbar-toggler" type="button">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link grow" href="ej1.html">Ejercicio 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link grow active" href="ej2.html"
+								>Ejercicio 2</a
+							>
+						</li>
+					</ul>
+					<div class="d-flex">
+						<a href="# "><i class="bi bi-instagram icon grow"></i></a>
+						<a href="# "><i class="bi bi-facebook icon grow"></i></a>
+						<a href="# "><i class="bi bi-twitter icon grow"></i></a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="row">
+				<div class="col-2">
+					<aside class="d-flex flex-column p-3 position-fixed">
+						<ul class="nav nav-pills flex-column mb-auto">
+							<li class="nav-item">
+								<a href="#video" class="nav-link grow my-2">
+									<i class="fs-5 bi bi-camera-reels"></i>
+									Video
+								</a>
+							</li>
+							<li>
+								<a href="#audio" class="nav-link grow my-2">
+									<i class="fs-5 bi bi-music-note-beamed"></i>
+									Audio
+								</a>
+							</li>
+							<li>
+								<a href="#transform" class="nav-link grow my-2">
+									<i class="fs-5 bi bi-menu-button-wide"></i>
+									Animaciones
+								</a>
+							</li>
+							<li>
+								<a href="#form" class="nav-link grow my-2">
+									<i class="fs-5 bi bi-clipboard"></i>
+									Formulario</a
+								>
+							</li>
+						</ul>
+					</aside>
+				</div>
+				<div class="col-8">
+					<h1 class="my-5 text-center">Ejercicio 2</h1>
+					<section class="my-5" id="video">
+						<h2><i class="fs-2 bi bi-camera-reels"></i> Video</h2>
+						<video height="480px" controls>
+							<source
+								src="assets/vid/tilin.webm"
+								type="video/webm"
+							/>
+							El navegador no soporta la etiqueta video.
+						</video>
+						<video height="480px" controls>
+							<source src="assets/vid/mc.mp4" type="video/mp4" />
+							El navegador no soporta la etiqueta video.
+						</video>
+						<iframe
+							title="Muppets"
+							height="480"
+							width="500"
+							src="https://www.youtube.com/embed/tgbNymZ7vqY"
+						>
+						</iframe>
+					</section>
+					<section class="my-5" id="audio">
+						<h2>
+							<i class="fs-2 bi bi-music-note-beamed"></i> Audio
+						</h2>
+						<div class="d-flex flex-row">
+							<div class="mx-5">
+								<h3>Industry Baby</h3>
+								<audio controls>
+									<source
+										src="assets/music/industrybaby.mp3"
+										type="audio/mp3"
+									/>
+									El navegador no soporta la etiqueta audio.
+								</audio>
+							</div>
+							<div class="mx-5">
+								<h3>The Nights</h3>
+								<audio controls>
+									<source
+										src="assets/music/thenights.mp3"
+										type="audio/mp3"
+									/>
+									El navegador no soporta la etiqueta audio.
+								</audio>
+							</div>
+							<div class="mx-5">
+								<h3>Yonaguni</h3>
+								<audio controls>
+									<source
+										src="assets/music/yonaguni.mp3"
+										type="audio/mp3"
+									/>
+									El navegador no soporta la etiqueta audio.
+								</audio>
+							</div>
+						</div>
+					</section>
+					<section class="my-5" id="transform">
+						<h2>
+							<i class="fs-2 bi bi-menu-button-wide"></i> Botones
+							Animaciones
+						</h2>
+						<div class="container">
+							<button
+								class="btn btn-primary btn-lg m-5"
+								id="btn1"
+							>
+								Ejemplo 1</button
+							><button
+								class="btn btn-primary btn-lg m-5"
+								id="btn2"
+							>
+								Ejemplo 2</button
+							><button
+								class="btn btn-primary btn-lg m-5"
+								id="btn3"
+							>
+								Ejemplo 3</button
+							><button
+								class="btn btn-primary btn-lg m-5"
+								id="btn4"
+							>
+								Ejemplo 4</button
+							><button
+								class="btn btn-primary btn-lg m-5"
+								id="btn5"
+							>
+								Ejemplo 5
+							</button>
+						</div>
+					</section>
+					<section class="my-5" id="form">
+						<h2><i class="fs-2 bi bi-clipboard"></i> Formulario</h2>
+						<div class="container-md">
+							<div class="row justify-content-center">
+								<form class="w-50">
+									<div class="form-floating mb-3">
+										<input
+											type="text"
+											class="form-control"
+											id="nombre"
+											placeholder="Juan"
+										/>
+										<label for="nombre" class="form-label"
+											>Nombre</label
+										>
+									</div>
+									<div class="form-floating mb-3">
+										<input
+											type="text"
+											class="form-control"
+											id="apellido"
+											placeholder="Perez"
+										/>
+										<label for="apellido" class="form-label"
+											>Apellido</label
+										>
+									</div>
+									<div class="form-floating mb-3">
+										<input
+											type="text"
+											class="form-control"
+											id="cedula"
+											placeholder="1234567890"
+										/>
+										<label for="cedula" class="form-label"
+											>Cédula</label
+										>
+									</div>
+									<div class="form-floating mb-3">
+										<input
+											type="date"
+											class="form-control"
+											id="exampleInputPassword1"
+											placeholder="fecha"
+										/>
+										<label
+											for="exampleInputPassword1"
+											class="form-label"
+											>Fecha de Nacimiento</label
+										>
+									</div>
+									<label for="RadioCheck" class="form-label"
+										>Género</label
+									>
+									<div class="form-check">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="RadioCheck"
+											id="femenino"
+										/>
+										<label
+											class="form-check-label"
+											for="femenino"
+										>
+											Femenino
+										</label>
+									</div>
+									<div class="form-check mb-3">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="RadioCheck"
+											id="masculino"
+										/>
+										<label
+											class="form-check-label"
+											for="masculino"
+										>
+											Masculino
+										</label>
+									</div>
+									<div class="form-floating mb-3">
+										<input
+											type="email"
+											class="form-control"
+											id="email"
+											placeholder="correo@mail.com"
+										/>
+										<label for="email" class="form-label"
+											>E-mail</label
+										>
+									</div>
+									<div class="mb-3 form-check">
+										<input
+											type="checkbox"
+											class="form-check-input"
+											id="exampleCheck1"
+										/>
+										<label
+											class="form-check-label"
+											for="exampleCheck1"
+											>Acepta términos y
+											condiciones</label
+										>
+									</div>
+									<button
+										type="submit"
+										class="btn btn-primary"
+									>
+										Enviar
+									</button>
+								</form>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="tit">
+				<p>Hecho por Sebastian Martínez</p>
+			</div>
+		</footer>
+	</body>
+</html>

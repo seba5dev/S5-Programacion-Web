@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+::selection {
+	background-color: #920797;
+	color: #fff;
+}
+
+* {
+	font-size: 16px;
+}
+
+body {
+	font: 400 1rem Nunito, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+div .d-flex a {
+	color: #000;
+	padding: 5px;
+	transition: all 0.2s ease-in-out;
+}
+
+div .d-flex a:hover {
+	transform: scale(1.1);
+}
+
+aside {
+	height: 100vh;
+	background-color: #f8f9fa;
+	width: 15%;
+}
+
+.tit {
+	text-align: center;
+}
+
+footer {
+	background-color: #f8f9fa;
+	padding: 15px;
+	width: 100%; /* 
+    position: fixed;
+    bottom: 0px; */
+}
+
+footer p {
+	margin: 0;
+}
+
+.grow {
+	transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(1.1);
+}
+
+a.nav-link {
+	color: #000;
+	text-decoration: none;
+}
+
+.btn{
+	transition: transform 1s;
+}
+
+#btn1:hover {
+	transition: all 1s ease-in-out;
+	transform: rotateX(360deg);
+}
+
+#btn2:hover {
+	transition: all 1s ease-in-out;
+	transform: rotateY(720deg) scale(1.5);
+}
+
+#btn3:hover {
+	transition: all 1s ease-in-out;
+	transform: rotate(1080deg) scale(1.5);
+}
+
+#btn4:hover {
+	transition: all 1s ease-in;
+	transform: translate(0, 50px) scale(1.5);
+}
+
+#btn5:hover {
+	transition: all 1s ease-in-out;
+	letter-spacing: 10px;
+}
